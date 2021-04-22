@@ -1,0 +1,17 @@
+criando hooks
+
+criamos mais @before na classe Config.
+para testar a ordem de execução, podemos ter mais de 1 before e after, poodemos setar tbm a ordem que eles acontecem.
+ex.:
+@Before("@primeiro")
+public void doFirst(){
+    System.out.println("before primeiro");
+}
+tbm poderia receber mais parametros
+@Before(value = "@primeiro", order = 2)
+public void doFirst(){
+    System.out.println("before primeiro");
+}
+aqui se existissem 2 befores esse seria o 2 na ordem.
+tambem funciona no after
+tomar cuidado com os after. caso a ordem definida for igual a de outro ele executa de baixo pra cima.

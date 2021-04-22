@@ -1,0 +1,15 @@
+criamos a classe CucumberRunner na pasta Java para identificar oque precisa ser rodado
+
+Com a anotação @RunWith(Cucumber.class)
+Dizemos ao junit para rodar junto ao cucumber
+e adicioamos a tag 
+@CucumberOptions(
+    tags = "not @wip and not @quarentine",
+    plugin = {"pretty", "html:build/reports/feature.html"},
+    features = {"src/test/resources/features"}
+)
+Essa tag faz com que features marcadadas com a tag @wip e a tag @quarentine sejam ignoradas na hora de rodar os testes.
+adicina o plugin de mostrar um relatorio dos testes e especifica aonde ele vai ficar
+e diz aonde estão as features para rodar os cenarios.
+
+Nisso conseguimos executar esta classe, e rodar nossos testes com certas configuraçoes.

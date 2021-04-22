@@ -1,0 +1,36 @@
+Oque é um cenario?
+UM cenario é um exemplo concreto de uma regra de negocio
+Um cenario usa exemplos concretos para explicar ideias abstratas]
+
+Formato
+
+Dado vai ser uma pre condição
+Quando a ação
+Então resultado esperado
+
+Ex. Dado que esteja no sistema -> Que sistema? que local do sistema?
+    Quando faço o login  	-> Quem entrou na paǵina? Era admin?
+    Entao fui logado		-> Oque deve ocorrer quando o usuario loga?
+    
+Ex Quando logo com o admin
+   ENtao devo ver a mensagem de usuario logado com sucesso /// Uma forma mais acertiva de usar o mesmo medelo acima
+   E o nome do usuario deve apareceer ao lado direito do menu
+
+Queremos responder a pergunta "COmo o sistema se comporta?" 
+Queremos descrever oque o sistema faz e não como ele faz.
+
+Tentar criar cenarios os mais acertivos possiveis, e tentar não passar algo que seria utilizado como codigo,
+Especificar demais uma ação como abro o google, e clico na barra de pesquisa, e digito QA , e clico em pesquisar, e Então recebo links de pesquisa Pode ser substituido facilmente por abro o google e faço uma pesquisa sobre QA, Entao devo receber resultados sobre QA.
+Ex. do video.:
+Dado que eu abra o Firefox 			
+E eu abra o site "www.amazon.com.br"
+Quando seleciono a busca			
+E digito "smathphone				// Muito especifico, sem necessidade
+E clico no botão de buscar
+E clico em "Apple" no filtro de "Marca"
+Então devo ver somente os produitos da aple
+
+PODE SER TOTALMENTE MUDADO PARA
+Quando pesquiso por "smartphone" na  AmazonBR
+E filtro o resultado por "Apple"
+Então somente os produtods da Apple são mostrados

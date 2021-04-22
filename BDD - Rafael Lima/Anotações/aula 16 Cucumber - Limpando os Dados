@@ -1,0 +1,14 @@
+settings > typo > inspections > desmarca o Proofreading
+Assim some aqueles avisos de linguagem na ide.
+
+limpamos o codigo da classe Configs
+setamos um novo metodo anotado com a @after que seta o metodo para rodar sempre que for o fim dos testes, nesse caso ele iria limpar todos os usuarios que nos criamos.
+
+Criamos um anotação tbm na feature, de nome deleteAllUsers, e chamamos ela dentro da anotação do after
+
+@After("@deleteAllUsers")
+public void deleteAllUsers(){  // metodo para apagar o 
+    userApi.deleteAllUsers();  //ussuario sempre que ele for criado.
+}
+
+com isso fazemos uma limpeza na api, para que ela sempre rode no estado "natural", na api que utilizamos por ex, ela deixa subir diversos usuarios iguals, mas no mundo real não seria possivel fazer isso, então poderia quebrar os testes numa coisa que é simples.

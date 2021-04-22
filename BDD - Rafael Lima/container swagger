@@ -1,0 +1,6 @@
+docker run --name petstore -d -p 12345:8080 swaggerapi/petstore3:unstable
+subir o container do swagger petstore mas como ja foi baixado
+so precisa digitar docker run petstore
+
+
+

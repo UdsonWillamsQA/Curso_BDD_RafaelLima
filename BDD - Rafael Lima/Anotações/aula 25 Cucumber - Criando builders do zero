@@ -1,0 +1,6 @@
+ao criar um builder o lombok nos da possibilidade de se ter valores padroes.
+
+Criando uma classe BUilder não se tem essa funcionalidade.
+Mas se pode fazer um metodo na classe builder com os atributos recebendo um valor e setar esse metodo no construtor da classe, assim sempre que chamar o builder sem mais nada ele será esse padrão.
+
+

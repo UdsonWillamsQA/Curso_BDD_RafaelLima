@@ -1,0 +1,3 @@
+Criamos os stepsDefinitions dos cenarios que ja tinhamos montado.
+
+DocString, classe cucumber para tratar de um Json

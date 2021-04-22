@@ -1,0 +1,22 @@
+criamos um esquema de cenario:
+Lista animais poelo seu estado de venda.
+
+  Esquema do Cenario: Lista animais pelo seu estado de venda
+    Dado que eu não possua animais sold
+    Quando eu pesquiso por todos os animais <estado>
+    Entao eu recebo a lista com <quantidade> animais
+
+    Exemplos: Animais em estoque
+      | estado    | quantidade |
+      | available | 7          |
+      | pending   | 2          |
+
+    Exemplos: Animais sem estoque:
+      | estado | quantidade |
+      | sold   | 0          |
+    
+Com esse esquema, nos conseguimos testar tanto os estados quanto a quantidade de cada elemento na api.
+
+Melhor do que ficar fazendo um cenario só para todos eles.
+    
+    

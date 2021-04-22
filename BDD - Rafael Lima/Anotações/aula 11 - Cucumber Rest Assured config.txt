@@ -1,0 +1,27 @@
+resolvendo duplicação de codigo.
+
+abrilitamos o log de requisições e resposta caso a validação falhe, isso faz com que se caso aconteça uma falha, ele dará explicações mais detalhadas sobre o problema.
+RestAssured,enableLoggingOfResquestAndResponseIfValidationFails();
+
+Criamos uma classe Config e nela criamos um metodo public void setup, e anotamos com a anotação @Before do cucumber, não a do Junit. Setamos a url base do restassured, e a base path desta forma:
+RestAssured.baseURI = "http://localhost:12345";
+RestAssured.basePath = "/api";
+
+Por conta da api funcionar basicamente com requisições e resposta em Json, acabamos setando que a requisição especificada fosse um novo objeto do tipo RequestSpecBuilder().setContentType(contentType.JSON).build();
+Desta forma todos os nossos testes já vão especificar que eles utilizam JSON
+Criamos um metodo getToken para retornar o token especifico para poder ter autorização de criar, deletar, fazer modificações na api
+
+da mesma forma fizemos com o responseSpecification
+
+Na pratica ficou assim:
+
+        //A especificação do request
+        RestAssured.requestSpecification = new RequestSpecBuilder().addHeader("Authorization", getToken()).setContentType(ContentType.JSON).build();
+
+        //A especificação do response
+        RestAssured.responseSpecification = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+
+    }
+    private String getToken(){
+        return "grant access";
+    }

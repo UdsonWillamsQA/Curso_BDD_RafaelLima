@@ -1,0 +1,8 @@
+criamos todos os steps de Pets
+1 cenario equivale a muitos steps, no nosso caso foram 1 cenario e 3 steps.
+
+utilizamos essa anotação na classe Pet
+@JsonIgnoreProperties(ignoreUnknown = true)
+anotação para ignorar alguns elementos do json, no caso os que são desconhecidos.
+
+Criamos a classe PetAPi e o metodo getPetsByStatus, que retornava uma lista de Pet.

@@ -1,0 +1,11 @@
+Desenvolvimento orientado por comportamento, é uma forma de colaboração no desenvolvimento de software que age como ponte de comunicação entre negocio e tecnologia
+
+Bdd ajuda os times a comunicarem requisitos com mais precisão, descobrirem defeitos mais cedo e entregando valor ao usuario.
+
+"bdd não é uma ferramenta que voce pode baixar, há um processo a seguir que envolve muitas funções na equipe de software.
+Gojko Adzic deu ao bdd um nome novo e melhor:especificação por exemplo" fala de Aslak Hellesoy(Criador do cucumber)
+
+"Seus cenarios no cucumber devem direcionar sua implementação, não refleti-la
+Isso significa que os recursos do cucumber devem ser escritos antes do codigo que implementa o recurso.
+
+

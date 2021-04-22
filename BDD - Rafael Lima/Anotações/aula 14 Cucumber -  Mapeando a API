@@ -1,0 +1,23 @@
+vamos criar clients
+
+criamos um novo pacote, chamado api, dentro do pacote suport
+criamos a classe UserApi, e nela que fizemos as requisições na api.
+a maioria do codigo foi direto para ela por meio de metodos.
+por ex.:
+public void creatUser(User user){
+given().
+	body(user).
+when().
+	post(CREATE_USER_ENDPOINT).
+then().
+	statusCode(HttpStatus.SC_OK);
+}
+Esse metodo cria um usuario, então na classe dos Steps só precisamos marcar a anotação do cenario, no caso @QUando, depois criar o metodo, criar uma variavel do tipo UserAPi como atributo, setamos ela no construtor, e chamar userApi.creatUser(com o usuario dentro);
+ex.
+@Quando("crio um usuário")
+public void crioUmUsuário() {
+    expectedUser = User.builder().build();
+
+    userApi.creatUser(expectedUser);
+}
+com isso deixamos o codigo muito mais limpo.

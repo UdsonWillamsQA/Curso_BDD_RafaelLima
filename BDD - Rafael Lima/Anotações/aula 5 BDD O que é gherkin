@@ -1,0 +1,39 @@
+Existem outras ferramentas que utilizam o bdd
+Cucumber
+Concordion - interessante pois usa html como linguagem de uso, pode ser mais fácil para mostrar os resultados e coisas do projeto
+jbehave
+Jasmine
+Specflow
+behat
+
+Oque é Gherkin?
+Linguagem natural com algumas funcionalidades.
+Pessoas técnicas e não técnicas podem entender ou escrever os cenários.
+Permite que os testes sejam executados, se tornando assim uma documentação viva. 
+
+Palavras chaves no Gherkin:
+Funcionalidade / Caracteristica
+Contexto / Cenario de Fundo
+Cenario / Exemplo
+Dado(a)(os)(as)
+Quando
+Então
+E
+Mas
+Esquema do Cenario/Cenario
+
+Funcionalidade
+Os cenarios de teste sao agrupados por funcionalidades
+Cada Arquivo .feature deve mapear a uma funcionalidade
+
+Contexto
+Reusa a configuração do teste
+idealmente nao deve fazer ação ou verofocação, só configuração
+Tente nao ter configs complexas, somente o necessario para o entendimento
+É executado antes de cada um dos cenarios
+
+Esquema de Cenario
+Mesmo Cenario, porem dados diferentes
+Cada linha na tabela de exemplos representa um cenario completo
+
+

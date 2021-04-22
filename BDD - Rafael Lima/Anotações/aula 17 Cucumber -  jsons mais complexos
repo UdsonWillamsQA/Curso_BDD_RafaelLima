@@ -1,0 +1,9 @@
+Nesta aula criamos a feature de animal.
+também as classes step, e pet.
+Step na pasta dos steps, e pet na pasta domain.
+
+adcionamos uma classe static dentro da classe pet para definir a categoria dos pets, fazemos as classes domain para "puchar" os dados para passar como request ou receber como response na api.
+
+utilizamos o lombok para criar @data, builder, construtor com e sem argumentos/parametros.
+
+

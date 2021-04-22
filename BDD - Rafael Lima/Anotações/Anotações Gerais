@@ -1,0 +1,15 @@
+utilizamos varios pacotes para arrumar nossas classes.
+
+PACOTES:
+Steps:
+    Classes de Steps, aonde codificamos os nossos features. Nesse caso também deixamos a classe de configuração.
+Suport:
+    Api:
+        Deixamos as classes de API, mudamos o codigo de given, when, them, para esta classe, depois instanciamos uma do mesmo tipo na classe dos Steps, e rodamos seus metodos.  (fazemos as acertivas na classe dos steps.)
+    domain:
+    	Neste pacote deixamos as classes "modelo", mas na realidade elas guardam os "atributos" que cada tipo da api possa ser representado. Ex os usuarios, os pets, a propria loja.
+
+settings > typo > inspections > desmarca o Proofreading
+Assim some aqueles avisos de linguagem na ide.
+
+

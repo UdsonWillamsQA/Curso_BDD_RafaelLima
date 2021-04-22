@@ -1,0 +1,20 @@
+começamos a criar os steps do ultimo cenario, o Quando crio um usuario.
+
+criamos um pacote suporte, com uma classe de suporte dentro
+injstalamos o lombok, pegando a dependencia do lombok e pondo no arquivo do build.gradle nos plugins, e tbm precisamos do plugin do lombok pro intelij
+
+segurando a tecla Alt conseguimos selecionar mais de uma linha
+
+com a anotação Builder permitimos que a classe que possui lombok possa ser instanciada.
+e se eu por um BUilder.default em cada atributo da classe eu posso setar um valor default pra ela, mas que eu posso alterar na hora do build.
+ex.:
+@Builder // permite instanciar um classe
+public class User {
+   @Builder.Default
+    private int id = 10;
+   @Builder.Default
+    private String username = "udsonwillams";
+}    
+criamos uma variavel static final para referencia o path do usuario
+private static final String CREATE_USER_ENDPOINT = "/v3/user";
+

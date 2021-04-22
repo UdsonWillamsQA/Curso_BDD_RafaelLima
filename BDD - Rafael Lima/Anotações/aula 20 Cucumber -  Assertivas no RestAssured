@@ -1,0 +1,4 @@
+criamos um step: E eu recebo uma outra lista de animais
+para fazer de exemplo.
+
+com um metodo getPetsResponseByStatus fizemos um objeto Response receber a resposta da api, e fizemos uma tratação.

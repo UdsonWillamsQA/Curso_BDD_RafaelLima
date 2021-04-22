@@ -1,0 +1,19 @@
+Criamos um metodo similar ao getPEtsbyStatus, nele fizemos a mesma coisa que o 1 metodo, mas de uma forma mais java. instanciando objetos e fazendo que eles recebam outros objetos, etc.
+
+Forma mais feita hoje em dia, dar um given, com parametros, dps um when com o tipo de requisição e o then com oque esperar.
+public List<Pet> getPetsByStatus(String status){
+    return given().
+	pathParam("status", status).
+    when().
+	get(FIND_PETS_BY_STATUS_ENDPOINT).
+    then().
+	extract().body().jsonPath().getList("", Pet.class);
+}
+
+Forma mais antiga, mais java de se fazer a mesma coisa do metodo acima, mas que também vai funcionar, a vantagem dele é poder retornar apartir de qualquer momento. depois do response por exemplo.
+public List<Pet> getPetsByStatus2(String status){
+    RequestSpecification httpRequest =  RestAssured.given();
+    httpRequest.pathParam("status", status);      // Forma mais "Java" de se fazer o metodo acima.
+    Response response = httpRequest.get(FIND_PETS_BY_STATUS_ENDPOINT);
+    return response.body().jsonPath().getList("", Pet.class);
+}

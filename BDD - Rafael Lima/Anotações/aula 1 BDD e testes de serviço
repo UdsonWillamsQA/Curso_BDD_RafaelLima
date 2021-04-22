@@ -1,0 +1,9 @@
+em testes de api Podem existir
+testes:
+Funcional
+Aceitação(fluxo de usuario) ex:. se cadastrar e salva no carrinho, se cadastra e compra algo
+Sanidade - O minimo que o sistema precisa efeturar para o sistema estar rodando
+Contrato
+Saude dos endpoints
+
+Em geral ao fazer os testes é melhor dividilos e esperar que só se passe para o proximo tipo de teste quando o primeiro tipo for concluido com sucesso.

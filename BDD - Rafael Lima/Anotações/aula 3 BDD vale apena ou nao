@@ -1,0 +1,19 @@
+vantagens:
+testes de aceitação
+especificações executaveis
+Fácil de entender
+Pode ser usado para novos integrantes entenderem o sistema
+Flexibilidade
+
+Desvantagens
+Como são testes funcionais, podem falhar aleatoriamente(flake)
+As feature podem demorar demais para rodar
+O pessoa do negocio pode não ler os cenários.
+Inserção de uma camada extra.
+Pode ser usado como estratégia para dados nos testes
+
+"Se voce esta usando o Cucumber como ferramenta de testes, voce está fazendo o uso incorreto"
+"Quando o cucumber é adotado apenas como uma ferramenta para escrever testes automatizados se nenhuma contruibuição dos analistas de negocios, eles tendem a se tornar imperativos e a perder o valor da documentação"
+"Há uma certa quantidade de cerimonia envolvida no cucumber. Existem as definições Gherkin e Step a serem mantidas. Isso pode ser justificado se melhorar a colaboração e reduzir mal-entendidos, mas se a ferramenta for usada no vácuo, esses beneficios obviamente nunca acontecerão"
+
+

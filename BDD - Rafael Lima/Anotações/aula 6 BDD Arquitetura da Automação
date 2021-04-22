@@ -1,0 +1,12 @@
+Estrutura de um projeto Cucumber
+
+Projeto > 
+
+Feature > 
+Cénarios >  // O Negocio
+Passos > 
+
+Step Definitions - Código de Suporte - Biblioteca de Automação >  //A tecnologia
+O sistema
+
+ 
